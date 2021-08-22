@@ -1,6 +1,6 @@
 .education {
     font-size: 14px;
-    
+    font-family: "Source Sans Pro", sans-serif;
   }
   
   .education-title {
@@ -9,4 +9,5 @@
   
   .description {
     font-size:13px;
+    font-family: "Source Sans Pro", sans-serif;
   }
