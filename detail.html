@@ -39,12 +39,10 @@
         </div>
         <div class="px-4 py-3">
           <ul class="list-inline list-social mb-3">
-            <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fab fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fab fa-dribbble"></i></a></li>
-            <li class="list-inline-item"><a class="reset-anchor" href="#"><i class="fas fa-envelope"></i></a></li>
+            <li class="list-inline-item"><a class="reset-anchor" href="https://www.facebook.com/andreaxiaotong.foo" target="_blank" ><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a class="reset-anchor" href="https://www.instagram.com/andrea.foo/" target="_blank" ><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a class="reset-anchor" href="https://www.linkedin.com/in/andrea-foo-356a95177/" target="_blank" ><i class="fab fa-linkedin"></i></a></li>
+            <li class="list-inline-item"><a class="reset-anchor" href="https://github.com/andreafoo11" target="_blank" ><i class="fab fa-github"></i></a></li>
           </ul>
         </div>
       </div>
@@ -91,12 +89,7 @@
                   </li>
                 </ul>
               </div>
-              <h2 class="h3 mb-4">Share</h2>
-              <ul class="list-inline">
-                <li class="list-inline-item"><a class="reset-anchor social-share-link facebook" href="#"><i class="fab fa-facebook-f mr-2"></i>Share</a></li>
-                <li class="list-inline-item"><a class="reset-anchor social-share-link twitter" href="#"><i class="fab fa-twitter mr-2"></i>Tweet</a></li>
-                <li class="list-inline-item"><a class="reset-anchor social-share-link instagram" href="#"><i class="fab fa-instagram mr-2"></i>Share</a></li>
-              </ul>
+              
             </div>
           </div>
           <h2 class="h3 mb-4">Related projects</h2>
@@ -207,11 +200,6 @@
     <script src="vendor/lightbox2/js/lightbox.min.js"></script>
     <script src="js/front.js"></script>
     <script>
-      // ------------------------------------------------------- //
-      //   Inject SVG Sprite - 
-      //   see more here 
-      //   https://css-tricks.com/ajaxing-svg-sprite/
-      // ------------------------------------------------------ //
       function injectSvgSprite(path) {
       
           var ajax = new XMLHttpRequest();
@@ -224,11 +212,10 @@
           document.body.insertBefore(div, document.body.childNodes[0]);
           }
       }
-      // this is set to BootstrapTemple website as you cannot 
-      // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
-      // while using file:// protocol
-      // pls don't forget to change to your domain :)
       injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
+
+      var theme = location.search.substring(1);
+      print(theme)
       
     </script>
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
