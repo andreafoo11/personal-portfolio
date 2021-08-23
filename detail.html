@@ -33,6 +33,8 @@
           });
       function appendData(data) {
           var theme = location.search.substring(1);
+          console.log(theme)
+          console.log(data[theme])
           document.getElementById("title") = data[theme][0].title;
           document.getElementById("description") = data[theme][0].description;
           document.getElementById("overview") = data[theme][0].overview;
