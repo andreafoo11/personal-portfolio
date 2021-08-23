@@ -19,9 +19,33 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.png">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <script>
+      
+      fetch('data.json')
+          .then(function (response) {
+              return response.json();
+          })
+          .then(function (data) {
+              appendData(data);
+          })
+          .catch(function (err) {
+              console.log('error: ' + err);
+          });
+      function appendData(data) {
+          var theme = location.search.substring(1);
+          document.getElementById("title") = data[theme][0].title;
+          document.getElementById("description") = data[theme][0].description;
+          document.getElementById("overview") = data[theme][0].overview;
+          document.getElementById("role") = data[theme][0].role;
+          document.getElementById("timeline") = data[theme][0].timeline;
+          document.getElementById("team") = data[theme][0].team;
+
+          document.getElementById("skills") = data[theme][0].skills;
+          document.getElementById("problem") = data[theme][0].problem;
+          document.getElementById("objective") = data[theme][0].objective;
+          document.getElementById("takeaways") = data[theme][0].takeaways;
+      }
+  </script>
   </head>
   <body>
     <div class="sidebar">
@@ -64,33 +88,57 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-7">
-              <h1>Tour de France</h1>
-              <p class="text-muted mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <h1 id="title"></h1>
+              <p class="text-muted mb-5" id="description"></p>
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-lg-7"><a href="img/portfolio-3.jpg" data-lightbox="image-1" data-title="Tour de France"><img class="img-fluid mb-4" src="img/portfolio-3.jpg" alt=""></a><a href="img/portfolio-1.jpg" data-lightbox="image-1" data-title="Tour de France"><img class="img-fluid mb-4" src="img/portfolio-1.jpg" alt=""></a></div>
+            <div class="col-lg-7">
+              <a href="img/educms4.PNG" data-lightbox="image-1" data-title="EduCMS1">
+                <img class="img-fluid mb-4" src="img/educms4.PNG" alt="">
+              </a>
+              <a href="img/educms2.PNG" data-lightbox="image-1" data-title="EduCMS1">
+                <img class="img-fluid mb-4" src="img/educms2.PNG" alt="">
+              </a>
+              
+            </div>
             <div class="col-lg-5 position-sticky">
-              <h2>Idea</h2>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h2>Overview</h2>
+              <p class="text-muted" id="overview"></p>
               <div class="p-4 bg-light mb-5">
                 <ul class="list-unstyled mb-0">
                   <li class="d-flex mb-2">
-                    <h6 class="mb-0">Category:</h6>
-                    <p class="ml-3 text-muted mb-0">Creative</p>
+                    <h6 class="mb-0">Timeline:</h6>
+                    <p class="ml-3 text-muted mb-0" id="timeline"></p>
                   </li>
                   <li class="d-flex mb-2">
-                    <h6 class="mb-0">Date:</h6>
-                    <p class="ml-3 text-muted mb-0">23 Dec 2019</p>
+                    <h6 class="mb-0">Role:</h6>
+                    <p class="ml-3 text-muted mb-0" id="role"></p>
                   </li>
                   <li class="d-flex">
-                    <h6 class="mb-0">Tags:</h6>
-                    <p class="ml-3 text-muted mb-0"><a class="reset-anchor mr-1" href="#">Art,</a><a class="reset-anchor mr-1" href="#">Branding,</a><a class="reset-anchor mr-1" href="#">Illustration,</a></p>
+                    <h6 class="mb-0">Team:</h6>
+                    <p class="ml-3 text-muted mb-0" id="team"></p>
                   </li>
                 </ul>
               </div>
-              
+              <h2>Skills</h2>
+              <p class="text-muted" id="skills"></p>
+              <h2>Problem</h2>
+              <p class="text-muted" id="problem"></p>
             </div>
+            <h2>Objective</h2>
+            <p class="text-muted" id="objective"></p>
+            <h2>Design Process</h2>
+            <a href="img/educms1" data-lightbox="image-1" data-title="EduCMS1">
+              <img class="img-fluid mb-4" src="img/educms1" alt="">
+            </a>
+            <a href="img/educms6.JPG" data-lightbox="image-1" data-title="EduCMS1">
+              <img class="img-fluid mb-4" src="img/educms6.JPG" alt="">
+            </a>
+            <h2>Outcome</h2>
+            <p class="text-muted" id="outcome"></p>
+            <h2>Takeaways</h2>
+            <p class="text-muted" id="takeaways"></p>
           </div>
         </div>
       </div>
@@ -156,7 +204,6 @@
     <script src="js/front.js"></script>
     <script>
       function injectSvgSprite(path) {
-      
           var ajax = new XMLHttpRequest();
           ajax.open("GET", path, true);
           ajax.send();
@@ -168,14 +215,8 @@
           }
       }
       injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
-
-      var theme = location.search.substring(1);
-      
-      var dict = {};
-      
       
     </script>
-    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </body>
 </html>

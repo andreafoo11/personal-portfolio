@@ -2,31 +2,53 @@
     "TLabCMS": [
         {
             "title": "T-Lab Content Management System",
-            "description": "blah"
-        },
-        {
-
+            "overview": "T-Lab Education is a startup in Shanghai China that aims to deliver an educational web app that teaches Chinese catered to children all over the world at various levels. The T-Lab content management system was designed and developed to allow the marketing and operations team in T-lab to efficiently design and create landing pages for promotional ads for the T-Lab Education App.",
+            "description": "A content management sytem for marketing and operations purposes",
+            "role": "Full Stack Software Engineer Intern",
+            "timeline": "Janurary - May 2021",
+            "team": "Full Stack Web Dev",
+            "skills":"AngularJS, NodeJS, Github, HTML, Postman, HTML, CSS", 
+            "problem": "As a startup, that had yet launched their first product, the marketing and operational team had been very busy with designing and coming up with promotional ideas for thier web app. While the full-time full stack engineer focused their time and energy on the web app itself, the marketing team focused their energies on raising awareness for their product. As a new intern at this startup, my manager and mentor gave me a lot of creative freedom based on my interests. I was assigned the task of working with the marketing team to help streamline the promotional process for the web app. Hence, I came up with the idea of a content management system to help streamline the process.",
+            "objective": "The goal of the content management system was to help streamline the marketing process by allowing the marketing team to easily create landing pages for promotions and advertistments for the new product.",
+            "outcome": "A new content management system with admin verification that allows the operations team to have the freedom to create landing pages with different content and layouts for their various marketing needs.",
+            "takeaways": "I grew tremendously not only as a programmer, but a team player. Throughout this project, I had the opportunity to work with other software engineers and product managers on the team. From designing to actually implementing it, I constantly had to communicate with the operations team to discuss their primary needs. Finally, I saw it as an extreme necessity to clearly document all my work in order for other engineers to review and pick up my work after I left the company when my work ended.",
+            "images": [
+                {
+                    "image1": ""
+                } 
+            ]
         }
     ],
 
     "SCA":[
+        {
+            "title": "Supply Crunch Allocation Microservice",
+            "overview": "blah",
+            "takeaways": "blah"
+        }
 
     ],
     "TVM": [
 
-    ],
-
-    "Arith": [
-
-    ],
-
-    "UM-Emulator": [
-
+        {
+            "title": "The Village Method Web App",
+            "overview": "T-Lab Education is a startup in Shanghai China that aims to deliver an educational web app that teaches Chinese catered to children all over the world at various levels. The T-Lab content management system was designed and developed to allow the marketing and operations team in T-lab to efficiently design and create landing pages for promotional ads for the T-Lab Education App.",
+            "description": "A content management sytem for marketing and operations purposes",
+            "role": "Full Stack Software Engineer Intern",
+            "timeline": "Janurary - May 2021",
+            "team": "Full Stack Web Dev",
+            "skills":"AngularJS, NodeJS, Github, HTML, Postman, HTML, CSS", 
+            "problem": "As a startup, that had yet launched their first product, the marketing and operational team had been very busy with designing and coming up with promotional ideas for thier web app. While the full-time full stack engineer focused their time and energy on the web app itself, the marketing team focused their energies on raising awareness for their product. As a new intern at this startup, my manager and mentor gave me a lot of creative freedom based on my interests. Since I was interested in full stack work, I was assigned the task of working with the marketing team to help streamline the promotional process for the web app. Hence, I came up with the idea of a content management system to help streamline the process.",
+            "objective": "The goal of the content management system was to help streamline the marketing process by allowing the marketing team to easily create landing pages for promotions and advertistments for the new product.",
+            "outcome": "blah",
+            "project-goals": "My personal goal for this project was to incorporate and admin ",
+            "takeaways": "blah"
+        }
     ],
 
 
     "KARE": [
 
-    ],
+    ]
 
 }
