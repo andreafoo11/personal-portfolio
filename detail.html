@@ -33,15 +33,14 @@
           });
       function appendData(data) {
           var theme = location.search.substring(1);
+          console.log(theme[0])
           console.log(theme[0].title)
-          console.log(data[theme])
           document.getElementById("title") = data[theme][0].title;
           document.getElementById("description") = data[theme][0].description;
           document.getElementById("overview") = data[theme][0].overview;
           document.getElementById("role") = data[theme][0].role;
           document.getElementById("timeline") = data[theme][0].timeline;
           document.getElementById("team") = data[theme][0].team;
-
           document.getElementById("skills") = data[theme][0].skills;
           document.getElementById("problem") = data[theme][0].problem;
           document.getElementById("objective") = data[theme][0].objective;
