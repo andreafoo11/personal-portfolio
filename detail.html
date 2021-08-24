@@ -33,9 +33,10 @@
           });
       function appendData(data) {
           var theme = location.search.substring(1);
-          console.log(theme[0])
+          console.log(theme)
+          console.log(theme.title)
           console.log(theme[0].title)
-          document.getElementById("title") = data[theme][0].title;
+          document.getElementById("title") = data[theme].title;
           document.getElementById("description") = data[theme][0].description;
           document.getElementById("overview") = data[theme][0].overview;
           document.getElementById("role") = data[theme][0].role;
