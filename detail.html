@@ -21,32 +21,32 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <script>
       
-      fetch('data.json')
-          .then(function (response) {
-              return response.json();
-          })
-          .then(function (data) {
-              appendData(data);
-          })
-          .catch(function (err) {
-              console.log('error: ' + err);
-          });
-      function appendData(data) {
-          var theme = location.search.substring(1);
-          console.log(theme)
-          console.log(theme.title)
-          console.log(theme[0].title)
-          document.getElementById("title") = data[theme].title;
-          document.getElementById("description") = data[theme][0].description;
-          document.getElementById("overview") = data[theme][0].overview;
-          document.getElementById("role") = data[theme][0].role;
-          document.getElementById("timeline") = data[theme][0].timeline;
-          document.getElementById("team") = data[theme][0].team;
-          document.getElementById("skills") = data[theme][0].skills;
-          document.getElementById("problem") = data[theme][0].problem;
-          document.getElementById("objective") = data[theme][0].objective;
-          document.getElementById("takeaways") = data[theme][0].takeaways;
-      }
+      // fetch('data.json')
+      //     .then(function (response) {
+      //         return response.json();
+      //     })
+      //     .then(function (data) {
+      //         appendData(data);
+      //     })
+      //     .catch(function (err) {
+      //         console.log('error: ' + err);
+      //     });
+      // function appendData(data) {
+      //     var theme = location.search.substring(1);
+      //     console.log(theme)
+      //     console.log(theme.title)
+      //     console.log(theme[0].title)
+      //     document.getElementById("title") = data[theme].title;
+      //     document.getElementById("description") = data[theme][0].description;
+      //     document.getElementById("overview") = data[theme][0].overview;
+      //     document.getElementById("role") = data[theme][0].role;
+      //     document.getElementById("timeline") = data[theme][0].timeline;
+      //     document.getElementById("team") = data[theme][0].team;
+      //     document.getElementById("skills") = data[theme][0].skills;
+      //     document.getElementById("problem") = data[theme][0].problem;
+      //     document.getElementById("objective") = data[theme][0].objective;
+      //     document.getElementById("takeaways") = data[theme][0].takeaways;
+      // }
   </script>
   </head>
   <body>
@@ -90,7 +90,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-7">
-              <h1 id="title"></h1>
+              <h1 id="title">T-Lab Content Management System</h1>
               <p class="text-muted mb-5" id="description"></p>
             </div>
           </div>
@@ -110,37 +110,41 @@
               <div class="p-4 bg-light mb-5">
                 <ul class="list-unstyled mb-0">
                   <li class="d-flex mb-2">
+                    <h6 class="mb-0">Company:</h6>
+                    <p class="ml-3 text-muted mb-0" id="timeline">T-Lab Education</p>
+                  </li>
+                  <li class="d-flex mb-2">
                     <h6 class="mb-0">Timeline:</h6>
-                    <p class="ml-3 text-muted mb-0" id="timeline"></p>
+                    <p class="ml-3 text-muted mb-0" id="timeline">Janurary - May 2021</p>
                   </li>
                   <li class="d-flex mb-2">
                     <h6 class="mb-0">Role:</h6>
-                    <p class="ml-3 text-muted mb-0" id="role"></p>
+                    <p class="ml-3 text-muted mb-0" id="role">Full Stack Software Engineer Intern</p>
                   </li>
                   <li class="d-flex">
                     <h6 class="mb-0">Team:</h6>
-                    <p class="ml-3 text-muted mb-0" id="team"></p>
+                    <p class="ml-3 text-muted mb-0" id="team">Full Stack Web Dev</p>
                   </li>
                 </ul>
               </div>
               <h2>Skills</h2>
-              <p class="text-muted" id="skills"></p>
+              <p class="text-muted" id="skills">AngularJS, NodeJS, Github, HTML, Postman, HTML, CSS</p>
               <h2>Problem</h2>
-              <p class="text-muted" id="problem"></p>
+              <p class="text-muted" id="problem">As a startup, that had yet launched their first product, the marketing and operational team had been very busy with designing and coming up with promotional ideas for thier web app. While the full-time full stack engineer focused their time and energy on the web app itself, the marketing team focused their energies on raising awareness for their product. As a new intern at this startup, my manager and mentor gave me a lot of creative freedom based on my interests. I was assigned the task of working with the marketing team to help streamline the promotional process for the web app. Hence, I came up with the idea of a content management system to help streamline the process.</p>
             </div>
             <h2>Objective</h2>
-            <p class="text-muted" id="objective"></p>
+            <p class="text-muted" id="objective">The goal of the content management system was to help streamline the marketing process by allowing the marketing team to easily create landing pages for promotions and advertistments for the new product.</p>
             <h2>Design Process</h2>
             <a href="img/educms1.jpg" data-lightbox="image-1" data-title="EduCMS1">
-              <img class="img-fluid mb-4" src="img/educms1.jpg" alt="">
+              <img class="img-fluid mb-4" src="img/educms1.jpg" alt="" width="300">
             </a>
             <a href="img/educms6.JPG" data-lightbox="image-1" data-title="EduCMS1">
-              <img class="img-fluid mb-4" src="img/educms6.JPG" alt="">
+              <img class="img-fluid mb-4" src="img/educms6.JPG" alt="" width="300">
             </a>
             <h2>Outcome</h2>
-            <p class="text-muted" id="outcome"></p>
+            <p class="text-muted" id="outcome">A new content management system with admin verification that allows the operations team to have the freedom to create landing pages with different content and layouts for their various marketing needs.</p>
             <h2>Takeaways</h2>
-            <p class="text-muted" id="takeaways"></p>
+            <p class="text-muted" id="takeaways">I grew tremendously not only as a programmer, but a team player. Throughout this project, I had the opportunity to work with other software engineers and product managers on the team. From designing to actually implementing it, I constantly had to communicate with the operations team to discuss their primary needs. Finally, I saw it as an extreme necessity to clearly document all my work in order for other engineers to review and pick up my work after I left the company when my work ended.</p>
           </div>
         </div>
       </div>
