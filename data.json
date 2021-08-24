@@ -2,6 +2,7 @@
     "TLabCMS": [
         {
             "title": "T-Lab Content Management System",
+            "company": "T-Lab Education",
             "overview": "T-Lab Education is a startup in Shanghai China that aims to deliver an educational web app that teaches Chinese catered to children all over the world at various levels. The T-Lab content management system was designed and developed to allow the marketing and operations team in T-lab to efficiently design and create landing pages for promotional ads for the T-Lab Education App.",
             "description": "A content management sytem for marketing and operations purposes",
             "role": "Full Stack Software Engineer Intern",
@@ -14,7 +15,7 @@
             "takeaways": "I grew tremendously not only as a programmer, but a team player. Throughout this project, I had the opportunity to work with other software engineers and product managers on the team. From designing to actually implementing it, I constantly had to communicate with the operations team to discuss their primary needs. Finally, I saw it as an extreme necessity to clearly document all my work in order for other engineers to review and pick up my work after I left the company when my work ended.",
             "images": [
                 {
-                    "image1": ""
+                    "image1": "img/educms4.PNG"
                 } 
             ]
         }
@@ -23,8 +24,24 @@
     "SCA":[
         {
             "title": "Supply Crunch Allocation Microservice",
-            "overview": "blah",
-            "takeaways": "blah"
+            "overview": "The idea behind supply crunch allocation is to prioritise drivers with booking that heading towards undersupply areas.",
+            "description": "A new microservice to improve the supply allocation process for Grab's Transportation service.",    
+            "role": "Backend Software Engineer Intern",
+            "timeline": "June - August 2021",
+            "team": "Backend Dispatch Engineering",
+            "company": "Grab Holdings Inc.",
+            "skills": "GO, Git, Kibana, Postman, Conveyer, Jenkins, Protobuf",
+            "problem": "In the recovery markets post-COVID, there have been observed changes in marketplace patterns where supply has been dwindling due to changes in earning expectations and several other reasons. This has created a situation where we are observing insufficient supply to cope with the gradually returning demand. In undersupplied areas in SG (e.g. morning peaks, weekends), it has been observed that ~10% of all bookings are unallocated due to a sheer lack of driver candidates nearby (% no supply), especially during the peak hours. The main goal was thus to moderate un-allocation rate due to undersupply. Hence the product will prioritize the drivers who will move towards a predicted undersupplied location (through the completion of booking) in the global batch clearing (GBC) allocation.",
+            "objective": "The key objective is to prioritise jobs that head towards predicted undersupplied areas ahead of time. This means that all else being equal, it would be more valuable bring Dax to supply crunched areas (e.g. CBD) than anywhere else. This can be seen in this diagram should in the slide. The first step is thus to first predict where the undersupplied areas are. This will be done by reading signals from existing supply services and real-time data within the last 10 minutes to predict for different area-time levels. The next step would then be prioritizing DAX that brings them to these areas. ",
+            "outcome": "A new microservice that will hopefully improve supply allocation during busy times. Unfortunately, my internship ended before the project was scheduled for experimentation. However, I am hopeful that the project will be an integral part of supply allocation in the future.",
+            "takeaways": " I didn’t have much backend experience coming into this internship, and so I was really nervous on starting from scratch and learning everything. But I am very grateful for this opportunity because I learned a lot from this experience and was able to get hands-on experience in GO backend service development from scaffolding a service all the way to delivering the service on production. I learned to use many technologies and frameworks commonly used in Grab like GrabKit, gRPC, Kibana, and Conveyor deploy pipelines. The whole development to deployment process for the SCA project was a very educational experience for me and I’m very grateful for all the help and advice that I have gotten.",
+            "images": [
+                {
+                    "image1": "blah"
+                }
+            ]
+
+            
         }
 
     ],
