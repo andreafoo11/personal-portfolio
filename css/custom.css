@@ -11,3 +11,12 @@
     font-size:13px;
     font-family: "Source Sans Pro", sans-serif;
   }
+
+
+  .headline-big {
+    font-size: 3.5rem;
+    font-weight: var(--font-bold);
+    padding-bottom: 0.2em;
+    line-height: 1.2em;
+    color: var(--text-dark);
+    }

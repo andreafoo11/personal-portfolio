@@ -2918,19 +2918,3 @@ code {
   color: #ef5285;
 }
 
-.headline-big {
-  font-size: 3.5rem;
-  font-weight: var(--font-bold);
-  padding-bottom: 0.2em;
-  line-height: 1.2em;
-  color: var(--text-dark);
-  }
-
-  .header-body {
-    line-height: 2em;
-    }
-
-
-    .proj-link {
-      color: #ef5285;
-      }
