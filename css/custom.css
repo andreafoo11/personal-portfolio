@@ -19,4 +19,13 @@
     padding-bottom: 0.2em;
     line-height: 1.2em;
     color: var(--text-dark);
-    }
+}
+
+.header-body {
+      line-height: 2em;
+      display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+}
