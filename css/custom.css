@@ -33,3 +33,9 @@
     width: 690px;
     height: 108px;
 }
+
+.social-icon {
+  padding: 10px 20px 10px 0;
+  font-size: 22px;
+  color: var(--text-dark);
+  }
