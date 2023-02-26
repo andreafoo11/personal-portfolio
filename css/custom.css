@@ -1,58 +1,89 @@
 .education {
-    font-size: 14px;
-    font-family: "Source Sans Pro", sans-serif;
-  }
-  
-  .education-title {
-      font-size: 16px;
-  }
-  
-  .description {
-    font-size:13px;
-    font-family: "Source Sans Pro", sans-serif;
-  }
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.education-title {
+  font-size: 16px;
+}
+
+.description {
+  font-size: 13px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.menu,
+.drop-menu {
+  list-style-type: none;
+}
 
 
-  .headline-big {
-    font-size: 3.5rem;
-    font-weight: bold;
-    line-height: 1.2em;
-    color: #3A3b3c;
-    font-family: Avenir Next;
-    margin-top: 200px;
-    
+
+.menu-item a {
+  text-decoration: none;
+  display: block;
+}
+
+.drop-menu {
+  display: none;
+  position: absolute;
+  min-width: 100px;
+}
+
+.drop-menu-item {
+  width: 100%;
+}
+
+.drop-menu-item:hover {
+  background-color: #eee;
+}
+
+
+.menu-item:hover .drop-menu {
+  display: block;
+}
+
+.headline-big {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2em;
+  color: #3A3b3c;
+  font-family: Avenir Next;
+  margin-top: 170px;
+
 }
 
 .header-body {
-    line-height: 2em;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    width: 95%;
-    height: 20%;
-    font-family: Avenir Next;
+  line-height: 2em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  width: 95%;
+  height: 20%;
+  font-family: Avenir Next;
 }
 
-#chunk{
-  width:80%;
-  padding-left:10%;
+#chunk {
+  width: 80%;
+  padding-left: 10%;
 }
 
 #social-icon {
-  padding-right:20px;
+  padding-right: 20px;
 }
 
-.iframe-container{
-  position:relative;
+.iframe-container {
+  position: relative;
   text-align: center;
   width: 100%;
   justify-content: center;
-  display:flex;
+  display: flex;
 }
-.ifram-container iframe{
+
+.ifram-container iframe {
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
 }
