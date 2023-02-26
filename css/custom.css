@@ -34,9 +34,10 @@
   width: 100%;
 }
 
-.drop-menu-item:hover {
-  background-color: #eee;
+.project-header {
+  color: #e01457
 }
+
 
 
 .menu-item:hover .drop-menu {
